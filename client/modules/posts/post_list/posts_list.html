@@ -1,0 +1,29 @@
+<template name="postsList">
+	<div class="posts">
+		{{#each todosLosPosts}}
+			<div class="post">
+				<div class="post-content">
+		            <h3>
+		            	<a href="{{url}}">{{title}}</a><span>{{url}}</span>
+		            </h3>
+		        </div>
+			</div>
+		{{/each}}
+	</div>
+	<button ID="ADD-POST">ADD POST</button>
+
+	<BR>
+	<DIV ID="FORMULARIO" STYLE="DISPLAY:NONE;">	
+		<LABEL>Titulo del POST</LABEL>
+		<INPUT ID="TITULO-POST" NAME="TITULO-POST" CLASS="DISEÑO"/>
+		<BR>
+		<LABEL>AUTHOR</LABEL>
+		<INPUT ID="AUTHOR-POST" NAME="AUTHOR-POST" CLASS="DISEÑO"/>
+		<BR>
+		<LABEL>URL</LABEL>
+		<INPUT ID="URL-POST" NAME="URL-POST" CLASS="DISEÑO"/>
+		<BR>
+		<BR>
+		<BUTTON id="ENVIAR">Enviar</BUTTON>
+	</DIV>
+</template>
